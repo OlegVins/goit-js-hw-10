@@ -4,10 +4,12 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 
-let userSelectedDate = null;
-
 const input = document.querySelector("#datetime-picker");
 const startBtn = document.querySelector("[data-start]");
+
+startBtn.disabled = true;
+
+let userSelectedDate = null;
 
 const options = {
   enableTime: true,
